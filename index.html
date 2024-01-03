@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container-text">
+            <h1>
+                FICOU COM DÚVIDA? <br>NOS MANDE UMA MENSAGEM!
+            </h1>
+            <p>
+                caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.
+            </p>
+        </div>
+        <div class="container-form">
+            <form action="">
+                <div class="input-wrapper">
+                    <input type="text" name="fullName" class="information" placeholder="Nome Completo *"/>
+                    <span class="errors error-fullName">campo obrigatório</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" name="email" class="information" placeholder="E-mail *"/>
+                    <span class="errors error-email">campo obrigatório</span>
+                    <span class="errors error-email-validate">e-mail inválido</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" name="telephone" class="information" placeholder="Telefone *"/>
+                    <span class="errors error-telephone">campo obrigatório</span>
+                </div>
+                <div class="input-wrapper">
+                    <textarea name="message" class="information" placeholder="Mensagem *" ></textarea>
+                    <span class="errors error-message">campo obrigatório</span>
+                </div>              
+                <label>
+                    * Campos Obrigatórios
+                </label>
+
+                <button type="submit" class="send">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
